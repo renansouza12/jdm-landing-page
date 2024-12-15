@@ -20,4 +20,17 @@ body,html{
 }
 h1{
     font-family: "Pathway Extreme", sans-serif;
+    font-size: 200px;
+    font-weight: 400;
+    color: var(--White);
+}
+
+span{
+    color: var(--Dark-gray);
+    font-weight: 400;
+    font-size: 4vw;
+}
+
+p{
+    color: var(--text-color);
 }

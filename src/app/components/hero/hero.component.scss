@@ -1,0 +1,42 @@
+:host {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+    .video_bg {
+        height: 100%;
+        width: 100%;
+        scale: 2.19;
+
+        video {
+            height: 100%;
+            width: 100%;
+            rotate: -90deg;
+            user-select: none;
+        }
+    }
+
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+        span{
+            font-size: 20px;
+            font-weight: 200;
+            letter-spacing: 10px;
+            color: var(--Gray);
+        }
+
+     
+
+    }
+    
+}
