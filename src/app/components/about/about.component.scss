@@ -1,0 +1,86 @@
+:host {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        text-align: center;
+        width: 70%;
+    }
+
+    .about_images {
+        display: grid;
+        grid-template-columns: repeat(3, .4fr);
+        place-content: center;
+        gap: 1rem;
+
+        .legends {
+            border: 1px solid var(--Gray);
+            height: 600px;
+            width: 15vw;
+            display: grid;
+            place-content: center;
+
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 5vw;
+                color: var(--White);
+                rotate: -90deg;
+            }
+        }
+
+        .image {
+            height: 600px;
+            width: 20vw;
+
+            &:nth-child(1) {
+                background: url('https://cdn.cosmos.so/19aee2a0-fbea-45e6-9c7b-dba14be80a75?format=jpeg') center/cover;
+            }
+            &:nth-child(3){
+                background: url('https://cdn.cosmos.so/42d15709-a363-4111-8c1a-95171a83c88e?format=jpeg')  center/cover;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width:720px) {
+    :host{
+        .about_images{
+            .image{
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media (max-width:525px) {
+        :host{
+
+            h1{
+                text-align: center;
+            }
+
+            .about_images{
+                grid-template-columns: 1fr;
+                .legends{
+                    width: 100%;
+                }
+
+                .image{
+                    width: 90vw;
+                }
+            }   
+           
+        }
+}
