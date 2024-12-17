@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-
+  protected firstImage:string = "images/about-images1.jpg";
+  protected secondImage:string = "images/about-images2.jpg";
 }
