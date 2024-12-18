@@ -37,11 +37,15 @@
         .image {
             height: 600px;
             width: 20vw;
-
+            overflow: hidden;
             position: relative;
 
             img {
                 object-fit: cover;
+                transition: .5s ease;
+                &:hover{
+                    scale: 1.1;
+                }
             }
 
         }
