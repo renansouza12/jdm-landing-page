@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './community.component.scss'
 })
 export class CommunityComponent {
-  protected image:string = "images/community-image.jpg";
+  protected video:string = "video/community/cars-video.mp4";
+  protected firstImage:string = "images/community/first-community-image.jpg"
+  protected secondImage:string = "images/community/second-community-image.jpg"
+  
 }

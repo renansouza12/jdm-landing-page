@@ -8,8 +8,18 @@
         the thrill of driving. It’s a testament to the bond between man and machine, fueled by passion and a desire for
         perfection.</p>
 
-    <div class="community_image">
-        <img [ngSrc]="image" fill  priority alt="">
+    <div class="community_images">
+        <div class="community_image">
+            <video autoplay loop muted playsinline>
+                <source [src]="video" type="video/mp4">
+            </video>
+        </div>
+        <div class="community_image">
+            <img [ngSrc]="firstImage" fill priority alt="purple car">
+        </div>
+        <div class="community_image">
+            <img [ngSrc]="secondImage" fill priority alt="yellow car">
+        </div>
     </div>
 
 </div>

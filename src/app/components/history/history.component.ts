@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './history.component.scss'
 })
 export class HistoryComponent {
-
+  protected videoR35:string = "video/history/r35-video.mp4";
+  protected supraVideo:string = "video/history/supra.mp4";
 }
