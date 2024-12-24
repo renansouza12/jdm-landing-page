@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
-export function animateTitle(selector: string): void {
+export function animateAboutTitle(selector: string): void {
     gsap.from(selector, {
         scrollTrigger: {
             trigger: selector,
@@ -55,7 +55,7 @@ export function animateSubtitle(selector: string): void {
             start: "-150% center",
             end: "bottom center",
             scrub: 1.5,
-
+    
         },
         y: -95,
         transition: 1.5,
@@ -94,15 +94,28 @@ export function animateSubtitle(selector: string): void {
 
 }
 
-export function animateImages(selector: string): void {
-    gsap.from(selector, {
-        scrollTrigger: {
-            trigger: selector,
-            start: "top center",
-            end: "center bottom",
-            scrub: 4,
+export function  animateImages(selector:string):void{
+    gsap.from(selector,{
+        scrollTrigger:{
+            trigger:selector,
+            start:"top center",
+            end:"center bottom",
+            scrub:4,
         },
-        y: 60,
+        y:60,
+        transition: 5,
+    });
+}
+
+export function animateTitle(selector:string):void{
+    gsap.from(selector,{
+        scrollTrigger:{
+            trigger:selector,
+            start:"top center",
+            end:"center bottom",
+            scrub:4,
+        },
+        y:-60,
         transition: 5,
     });
 }

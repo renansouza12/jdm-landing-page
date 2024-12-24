@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { animateImages, animateSubtitle, animateTitle } from '../../animations/gsap-animations';
+import { animateAboutTitle, animateImages, animateSubtitle, animateTitle } from '../../animations/gsap-animations';
 
 @Component({
   selector: 'app-about',
@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit{
   protected secondImage:string = "images/about-images2.jpg";
 
   ngOnInit(): void {
-    animateTitle(".title")
+    animateAboutTitle(".title")
     animateSubtitle(".subtitle");
     animateImages(".image")
   }

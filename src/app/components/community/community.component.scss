@@ -91,8 +91,15 @@
 
                     &:nth-child(2) {
                         top: -10%;
-
+                        height: 200px;
                     }
+
+                    
+                &:nth-child(3) {
+                    height: 150px;
+                    width: 150px;
+                   
+                }
                 }
             }
 
@@ -113,12 +120,12 @@
                     }
 
                     &:nth-child(2) {
-                        top: -10%;
-                        height: 250px;
+                        top: -17%;
+                        height: 180px;
                         width: 90%;
                     }
                     &:nth-child(3) {
-                     bottom: 0%;
+                         bottom: -10%;
                         height: 150px;
                         width: 90%;
                     }
