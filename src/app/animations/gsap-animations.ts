@@ -13,7 +13,6 @@ export function animateTitle(selector: string): void {
             start: "-200% center",
             end: "top center",
             scrub: 1,
-            // markers:true
         },
         y: 200,
         transition: 5,
@@ -40,7 +39,6 @@ export function animateTitle(selector: string): void {
                 trigger: selector,
                 start: "-200% center",
                 end: "top center",
-                markers: true
             },
             y: -100,
 
@@ -57,7 +55,7 @@ export function animateSubtitle(selector: string): void {
             start: "-150% center",
             end: "bottom center",
             scrub: 1.5,
-            // markers:true
+
         },
         y: -95,
         transition: 1.5,
@@ -94,4 +92,17 @@ export function animateSubtitle(selector: string): void {
         });
     });
 
+}
+
+export function animateImages(selector: string): void {
+    gsap.from(selector, {
+        scrollTrigger: {
+            trigger: selector,
+            start: "top center",
+            end: "center bottom",
+            scrub: 4,
+        },
+        y: 60,
+        transition: 5,
+    });
 }
