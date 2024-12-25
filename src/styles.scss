@@ -17,6 +17,10 @@ body{
     --White:#FFFFFF;
     --Gray:rgba(221, 221, 221, 0.5);
     --Dark-gray:#525252;
+
+    --scrollbar-bg: #333333;
+    --scrollbar-thumb: #888888;
+    --scrollbar-thumb-hover: #555555;
 }
 h1{
     font-family: "Pathway Extreme", sans-serif;
@@ -35,4 +39,29 @@ span{
 p{
     color: var(--text-color);
     font-size: 14px;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg); 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb); 
+    border-radius: 10px; 
+    border: 3px solid var(--scrollbar-bg);
+    transition: .5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover); 
+}
+
+::selection {
+    background: var(--scrollbar-bg); 
+    color: var(--White); 
 }
