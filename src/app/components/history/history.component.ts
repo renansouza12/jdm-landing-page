@@ -1,6 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { animateTitle } from '../../animations/gsap-animations';
+import { animateHistoryTitle, animateImages, animateTitle } from '../../animations/gsap-animations';
+
 
 @Component({
   selector: 'app-history',
@@ -14,6 +15,7 @@ export class HistoryComponent implements OnInit {
 
 
   ngOnInit(): void {
-    animateTitle(".evo_title");
+    animateHistoryTitle(".hist_title",".hist_subtitle");
+    animateImages(".car_image");
   }
 }

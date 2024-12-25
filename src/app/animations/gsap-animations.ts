@@ -26,7 +26,7 @@ export function animateAboutTitle(selector: string): void {
             end: "top center",
             scrub: 1,
         },
-        x: -20,
+        x: -30,
         transition: 5,
 
     });
@@ -117,5 +117,30 @@ export function animateTitle(selector:string):void{
         },
         y:-60,
         transition: 5,
+    });
+}
+
+export function animateHistoryTitle(firstSelector:string,secondSelector:string):void{
+    gsap.from(firstSelector,{
+        scrollTrigger:{
+            trigger:firstSelector,
+            start:"top center",
+            end:"bottom center",
+            scrub:4,
+        },
+        y:60,
+        transition: 5,
+        opacity:0
+    });
+    gsap.from(secondSelector,{
+        scrollTrigger:{
+            trigger:secondSelector,
+            start:"top center",
+            end:"center center",
+            scrub:4,
+        },
+        y:-60,
+        transition: 5,
+        opacity:0
     });
 }
